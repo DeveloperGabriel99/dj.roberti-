@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dj.roberti - Galeria</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="video-background"><div class="video-overlay"></div></div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">dj.roberti</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="galeria.html" class="active">Galeria</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-content gallery-page">
+            
+            <section class="page-header content-section">
+                <h1>Galeria</h1>
+                <p>Momentos capturados na energia da pista e na criatividade do estúdio.</p>
+            </section>
+
+            <section class="gallery-photos-section content-section">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="eventos">Eventos</button>
+                    <button class="filter-btn" data-filter="estudio">Estúdio</button>
+                    <button class="filter-btn" data-filter="fas">Fãs</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="eventos"><img src="https://picsum.photos/seed/event1/600/600" alt="DJ tocando em evento"></div>
+                    <div class="gallery-item" data-category="eventos"><img src="https://picsum.photos/seed/event2/600/600" alt="Público em show"></div>
+                    <div class="gallery-item" data-category="estudio"><img src="https://picsum.photos/seed/studio1/600/600" alt="Equipamento de DJ no estúdio"></div>
+                    <div class="gallery-item" data-category="estudio"><img src="https://picsum.photos/seed/studio2/600/600" alt="DJ mixando no estúdio"></div>
+                    <div class="gallery-item" data-category="fas"><img src="https://picsum.photos/seed/fan1/600/600" alt="Fã com camiseta da DJ"></div>
+                    <div class="gallery-item" data-category="eventos"><img src="https://picsum.photos/seed/event3/600/600" alt="Luzes do palco"></div>
+                    <div class="gallery-item" data-category="fas"><img src="https://picsum.photos/seed/fan2/600/600" alt="Grupo de fãs no show"></div>
+                    <div class="gallery-item" data-category="estudio"><img src="https://picsum.photos/seed/studio3/600/600" alt="Detalhe do mixer"></div>
+                </div>
+            </section>
+
+            <section class="gallery-videos-section content-section">
+                <h2 class="section-title">Vídeos</h2>
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <iframe src="https://www.youtube.com/embed/ch_Fz2_zLEs?si=u8c8cT5R6i4pGZ0f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe src="https://www.youtube.com/embed/FTsIG1Ce36s?si=pXvC3r8d9f4eJ1gK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                             <div class="swiper-slide">
+                                <iframe src="https://www.youtube.com/embed/AWdwRlbr2ja?si=p_uU4n7wQ0r9f5Yj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 dj.roberti. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
