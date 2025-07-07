@@ -7,6 +7,14 @@ window.addEventListener('load', () => {
             preloader.style.display = 'none';
         }, 750);
     }
+
+    // --- LÓGICA DO MENU MOBILE (HAMBURGER) ---
+    const menuToggle = document.querySelector('.menu-toggle');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            document.body.classList.toggle('nav-active');
+        });
+    }
     
     // --- LÓGICA DA ANIMAÇÃO DO TEXTO HERO (GSAP) ---
     const impactPhrase = document.querySelector('.impact-phrase');
